@@ -40,7 +40,8 @@ namespace API.Controllers
             }
             catch(Exception ex)
             {
-                return StatusCode(500,"Computer says no!");
+                throw ex;
+                //return StatusCode(500,"Computer says no!");
             }
         }
 
