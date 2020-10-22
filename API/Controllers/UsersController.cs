@@ -33,7 +33,7 @@ namespace API.Controllers {
         [HttpGet("{username}")]
         public async Task<ActionResult<MemberDto>> GetUsers(string username)
         {            
-            return  await _userRepository.GetMemberAync(username)        
+            return  await _userRepository.GetMemberAync(username);        
         }
     }
 }
